@@ -28,22 +28,19 @@ body {
     font-family: Biko, sans-serif, "Times New Roman";
 }
 
-a {
-    text-decoration: none;
-}
-
-
-
 .footer {
     display: inline;
     text-align: center;
     color: white;
 }
 
+.footer a {
+    text-decoration: none;
+}
+
 .past-links {
     margin: 1em;
     color: white;
-    text-decoration: none;
 }
 
 a .social-media {

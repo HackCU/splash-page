@@ -148,6 +148,10 @@ a:hover {
 	margin-top: 0.5em;
 }
 
+.email-input input {
+	font-family: Biko, sans-serif, "Times New Roman";
+}
+
 /* Small phone screen sizes */
 @media only screen and (max-device-width: 411px) {
 	h1 {

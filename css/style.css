@@ -121,6 +121,18 @@ h5 {
 	margin-top: 1em;
 }
 
+.btn-primary {
+	color: #fff;
+	background-color: #827C6C;
+	border: 0;
+	border-radius: 0;
+}
+
+.squared {
+	border: 0;
+	border-radius: 0;
+}
+
 /* Phone screen sizes */
 @media only screen and (max-device-width: 480px) {
 	h2 {
@@ -160,4 +172,5 @@ h5 {
 		width: 500px;
 	}
 }
+
 

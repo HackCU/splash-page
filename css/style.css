@@ -21,6 +21,9 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
 
 .footer {
     display: inline;
@@ -51,6 +54,18 @@ h5 {
 
 .fa {
     color: white;
+}
+
+.fa:hover {
+    color: #2B546B;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 1em;
 }
 
 

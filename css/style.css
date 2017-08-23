@@ -11,6 +11,12 @@ html {
 	height: 100%;
 }
 
+@font-face {
+    font-family: Biko;
+    src: url('../fonts/Biko_Regular.otf');
+    url('../fonts/Biko_Regular.otf'); /* IE */
+}
+
 body {
 	background: #063651; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%); 
@@ -19,11 +25,14 @@ body {
 	background: linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%); /* Standard syntax */
 	height: 100%;
     color: white;
+    font-family: Biko, sans-serif, "Times New Roman";
 }
 
 a {
     text-decoration: none;
 }
+
+
 
 .footer {
     display: inline;

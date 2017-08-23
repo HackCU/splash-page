@@ -1,13 +1,9 @@
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+* {
+	margin: 0;
 }
 
-html {
+html, body {
+	width: 100%;
 	height: 100%;
 }
 
@@ -17,20 +13,26 @@ html {
     url('../fonts/Biko_Regular.otf'); /* IE */
 }
 
-body {
+body:before {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: block;
 	background: #063651; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%); 
 	background: -o-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%);
 	background: -moz-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%); 
 	background: linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%); /* Standard syntax */
+	content: "";
+}
+
+body {
 	height: 100%;
     color: white;
     font-family: Biko, sans-serif, "Times New Roman";
-}
-
-.footer {
-    display: inline;
-    text-align: center;
     color: white;
 }
 
@@ -43,9 +45,21 @@ body {
     color: white;
 }
 
-a .social-media {
-    margin: 0.5em;
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
+
+.logo {
+	max-width: 90%;
+	padding-top: 60px;
+	width: 500px;
+}
+
 
 .email-input {
     width: 350px;
@@ -58,21 +72,36 @@ h5 {
     margin-top: 1em;
 }
 
-.fa {
-    color: white;
+
+.footer {
+	height: 100px;
+	text-align: center;
+	margin-top: -140px;
+	padding-top: 40px;
+	width: 100%;
 }
 
-.fa:hover {
-    color: #2B546B;
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	text-align: center;
+	margin-bottom: -100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-footer {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin-bottom: 1em;
+.wrapper:after {
+	content: "";
+	display: block;
 }
 
+.footer, .wrapper:after {
+  height: 142px; 
+}
 
+.content {
+		max-width: 100%;
+		margin: auto;
+}
 

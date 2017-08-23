@@ -92,6 +92,7 @@ h5 {
 
 .logo {
 	width: 40%;
+	max-width: 40%;
 }
 
 .wrapper:after {

@@ -2,15 +2,22 @@
 	margin: 0;
 }
 
-html, body {
-	width: 100%;
-	height: 100%;
-}
-
 @font-face {
     font-family: Biko;
     src: url('../fonts/Biko_Regular.otf');
     url('../fonts/Biko_Regular.otf'); /* IE */
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	height: 99%;
+	width: 100%;
+    color: white;
+    font-family: Biko, sans-serif, "Times New Roman";
 }
 
 body:before {
@@ -29,19 +36,8 @@ body:before {
 	content: "";
 }
 
-body {
-	height: 99%;
-    color: white;
-    font-family: Biko, sans-serif, "Times New Roman";
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.past-links {
-    margin: 1em;
-    color: white;
+h5 {
+    margin-top: 1em;
 }
 
 canvas {
@@ -54,11 +50,10 @@ canvas {
 }
 
 .logo {
-	max-width: 90%;
+	max-width: 40%;
 	padding-top: 60px;
 	width: 500px;
 }
-
 
 .email-input {
     width: 350px;
@@ -67,10 +62,10 @@ canvas {
     margin-top: 2em;
 }
 
-h5 {
-    margin-top: 1em;
+.past-links {
+    margin: 1em;
+    color: white;
 }
-
 
 .footer {
 	height: 100px;
@@ -78,6 +73,10 @@ h5 {
 	margin-top: -140px;
 	padding-top: 50px;
 	width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 .wrapper {
@@ -88,11 +87,6 @@ h5 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.logo {
-	width: 40%;
-	max-width: 40%;
 }
 
 .wrapper:after {

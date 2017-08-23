@@ -5,6 +5,8 @@ $(function() {
   document.body.insertBefore(renderer.view, document.body.childNodes[0]);
 
 
+
+
   var stage = new PIXI.Container();
 
   // Init sprites
@@ -63,5 +65,6 @@ $(function() {
     renderer.resize(window.innerWidth, window.innerHeight);
   }
 
+  window.addEventListener('resize', resize , false)
   resize()
 })

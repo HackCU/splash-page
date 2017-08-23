@@ -109,12 +109,16 @@ h5 {
 }
 
 .fa {
-	color: white;
+	color: #ffffff;
 	margin: 0.5em;
 }
 
 .fa:hover {
-	color: #014c8c;
+	color: #dfdfdf;
+}
+
+a:hover {
+	color: #dfdfdf;
 }
 
 .title {
@@ -126,6 +130,10 @@ h5 {
 	background-color: #827C6C;
 	border: 0;
 	border-radius: 0;
+}
+
+.btn-primary:hover {
+	background-color: #726C5C;
 }
 
 .squared {

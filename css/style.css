@@ -35,6 +35,10 @@ body {
     font-family: Biko, sans-serif, "Times New Roman";
 }
 
+h1, h2, h3, h4, h5 {
+	color: white !important;
+}
+
 .footer a {
     text-decoration: none;
 }

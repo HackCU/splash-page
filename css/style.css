@@ -50,9 +50,9 @@ canvas {
 }
 
 .logo {
-	max-width: 200px;
+	max-width: 40%;
 	padding-top: 60px;
-	width: 500px;
+	width: 300px;
 }
 
 .email-input {

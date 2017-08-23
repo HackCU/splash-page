@@ -18,16 +18,20 @@ body {
 	background: -moz-linear-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(red, yellow, green); /* Standard syntax */
 	height: 100%;
+    color: white;
 }
 
 
 .footer {
     display: inline;
     text-align: center;
+    color: white;
 }
 
 .past-links {
     margin: 1em;
+    color: white;
+    text-decoration: none;
 }
 
 a .social-media {
@@ -43,6 +47,10 @@ a .social-media {
 
 h5 {
     margin-top: 1em;
+}
+
+.fa {
+    color: white;
 }
 
 

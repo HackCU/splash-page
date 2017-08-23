@@ -1,3 +1,8 @@
+// Based mainly on https://github.com/Reynau/space/ by @reynau
+// Edited by @casassg
+// It looks good mate!
+
+
 $(function() {
   var renderer = PIXI.autoDetectRenderer(1920, 1080, { antialias: true, transparent: true });
   renderer.view.style.width = "100%";

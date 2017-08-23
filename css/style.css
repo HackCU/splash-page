@@ -90,6 +90,10 @@ h5 {
 	justify-content: center;
 }
 
+.logo {
+	width: 40%;
+}
+
 .wrapper:after {
 	content: "";
 	display: block;
@@ -117,13 +121,6 @@ h5 {
 	margin-top: 1em;
 }
 
-/* Tablet screen sizes */
-@media only screen and (max-device-width: 768px) and (min-device-width: 481px) {
-	.email-input {
-		width: 500px;
-	}
-}
-
 /* Phone screen sizes */
 @media only screen and (max-device-width: 480px) {
 	h2 {
@@ -137,3 +134,30 @@ h5 {
 		max-width: 100%;
 	}
 }
+
+/* Small tablet screen sizes */
+@media only screen and (max-device-width: 768px) and (min-device-width: 481px) {
+	.email-input {
+		width: 500px;
+	}
+}
+
+/* Large tablet screen sizes */
+@media only screen and (max-device-width: 1280px) and (min-device-width: 769px) {
+	.logo {
+		width: 80%;
+	}
+	.title {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	h5 {
+		font-size: 2rem;
+	}
+	.email-input {
+		width: 500px;
+	}
+}
+

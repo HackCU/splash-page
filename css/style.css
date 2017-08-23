@@ -141,6 +141,10 @@ a:hover {
 	border-radius: 0;
 }
 
+.msg {
+	margin-top: 0.5em;
+}
+
 /* Phone screen sizes */
 @media only screen and (max-device-width: 480px) {
 	h2 {

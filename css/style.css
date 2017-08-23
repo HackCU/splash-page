@@ -132,6 +132,10 @@ a:hover {
 	border-radius: 0;
 }
 
+.input-group {
+    display: flex;
+}
+
 .btn-primary:hover {
 	background-color: #726C5C;
 }

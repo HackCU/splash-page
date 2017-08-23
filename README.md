@@ -9,7 +9,7 @@ Off-season static page for HackCU. Allows users to subscribe to email list to be
 # Setup
 
 ```sh
-git clone git@github.com:hackupc/subscribe.git
+git clone https://github.com/HackCU/splash-page.git
 ```
 
 

@@ -17,6 +17,9 @@ git clone https://github.com/HackCU/splash-page.git
 
 Just run an static web server from the project folder. A great option for this would be to use `python -m SimpleHTTPServer`, but any other option would work.
 
+# Want to contribute?
+Follow these [guidelines](.github/CONTRIBUTING.md)
+
 # External libraries used
 
 - [Bootstrap](https://getbootstrap.com/docs/3.3/)

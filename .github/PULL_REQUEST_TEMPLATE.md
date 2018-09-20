@@ -1,5 +1,5 @@
 <!--  Thanks for sending a pull request!  Here are some tips for you:
-1. If this is your first time, read our contributor guidelines  https://github.com/hackcu/hackcu/blob/master/.github/CONTRIBUTING.md
+1. If this is your first time, read our contributor guidelines  https://github.com/hackcu/splash-page/blob/master/.github/CONTRIBUTING.md
 -->
 
 ## What this PR does / why we need it
@@ -22,5 +22,4 @@ Fixes #
 (optional)
 
 ## Additional Notes
-
 Do you want to add anything else? We :heart: to hear your opinions!

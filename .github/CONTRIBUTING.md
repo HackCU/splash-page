@@ -14,3 +14,4 @@ Want to contribute to this repo? Great! We  :heart:  contributions. Just make su
 1. Work on the `dev` or `develop` branch
 2. Test locally and make sure the website functions properly and you didn't break anything.
 3. Create a pull request with a descriptive title. Clearly document any changes you made. You should be able to explain why you made those changes.
+

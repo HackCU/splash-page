@@ -23,6 +23,9 @@ Needs: Ruby
 
 Deployment is done automatically by [GitHub pages](https://pages.github.com/). You don't need to do anything else than pushing to master.
 
+# Want to contribute?
+Follow these [guidelines](.github/CONTRIBUTING.md)
+
 # External libraries used
 
 - [Bootstrap](https://getbootstrap.com/docs/3.3/)

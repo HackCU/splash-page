@@ -6,16 +6,22 @@
 
 Off-season static page for HackCU. Allows users to subscribe to email list to be notified when applications get released.
 
-# Setup
+# Run project
 
-```sh
-git clone https://github.com/HackCU/splash-page.git
-```
+Needs: Ruby
 
+## Local 
 
-# Develop
+1. `git clone https://github.com/hackcu/splash-page && cd splash-page`
+2. `gem install jekyll`
+3. `jekyll serve --watch`
 
-Just run an static web server from the project folder. A great option for this would be to use `python -m SimpleHTTPServer`, but any other option would work.
+## Deploy
+
+1. Push changes to master
+2. There's no `2`
+
+Deployment is done automatically by [GitHub pages](https://pages.github.com/). You don't need to do anything else than pushing to master.
 
 # External libraries used
 
@@ -23,6 +29,10 @@ Just run an static web server from the project folder. A great option for this w
 - [jQuery](https://jquery.com/)
 - [PixiJS](http://www.pixijs.com/)
 - [Space stars](https://github.com/Reynau/space)
+
+# Want to contribute?
+
+Please read our [Code of Conduct](.github/CODE_OF_CONDUCT.md), then follow these [guidelines](.github/CONTRIBUTING.md)
 
 # License
 

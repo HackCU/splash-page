@@ -24,10 +24,12 @@ function validateEmail(email) {
 }
 
 function register($form) {
+    var data = {};
+    $form.serializeArray().map(function(x){data[x.name] = x.value;}); 
     $.ajax({
         type: $form.attr('method'),
         url: $form.attr('action'),
-        data: $form.serialize(),
+        data: JSON.stringify(data),
         cache: false,
         dataType: 'json',
         contentType: "application/json; charset=utf-8",
@@ -35,7 +37,7 @@ function register($form) {
             console.error("Could not connect to the registration server. Please try again later.");
         },
         success: function (data) {
-            if (data.result !== "success") {
+            if (!data.ok) {
                 statusMessage.innerHTML = "There was an error. You may have already signed up!";
                 statusMessage.style.color = 'pink';
             } else {

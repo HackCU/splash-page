@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
@@ -45,7 +47,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Our own CSS, yay! -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?_={{ site.time |  date: '%s' }}">
 
 </head>
 
@@ -60,22 +62,18 @@
 
         <h5>Be the first to know when 2018 applications open!</h5>
 
-        <form action="//hackcu.us9.list-manage.com/subscribe/post-json?u=49aeedf14b2c47f4dfb477e97&amp;id=79e1c1a870&c=?"
-              method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+        <form action="{{site.subscribe_endpoint}}"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
               target="_blank" novalidate>
 
             <div class="input-group email-input">
-                <input type="email" value="" placeholder="Email" name="EMAIL"
+                <input type="email" value="" placeholder="Email" name="email"
                        class="required squared email form-control"
                        id="mce-EMAIL">
                 <div id="mce-responses" class="clear">
                     <div class="response" id="mce-error-response" style="display:none"></div>
                     <div class="response" id="mce-success-response" style="display:none"></div>
                 </div>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                                                                          name="b_49aeedf14b2c47f4dfb477e97_79e1c1a870"
-                                                                                          tabindex="-1" value=""></div>
                 <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
             </div>
             <p id="msg" class="msg"></p>
@@ -104,8 +102,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
 
 <!-- Pixi JS -->
-<script src="js/space.js"></script>
-<script src="js/subscribe.js"></script>
+<script src="js/space.js?_={{ site.time |  date: '%s' }}"></script>
+<script src="js/subscribe.js?_={{ site.time |  date: '%s' }}"></script>
 
 </body>
 

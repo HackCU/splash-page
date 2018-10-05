@@ -8,12 +8,14 @@ $cloud-color:#E4EFF3;
   left: 0;
   bottom: 0;
   position: absolute;
-  width: 500px;
+  width: 100%;
   height: 700px;
+  overflow: hidden;
   z-index: -1;
   .drawing{
     width: 500px;
     height: 700px;
+    
     
   }
 }
@@ -27,11 +29,11 @@ $cloud-color:#E4EFF3;
 .shadow{
   position:absolute;
   right:0;
-  bottom:-420px;
+  bottom:-410px;
   transform: translate(50%);
   opacity:0.7;
   width: 676px;
-  height: 420px;
+  height: 410px;
 }
 
 .station-down {
@@ -43,6 +45,17 @@ $cloud-color:#E4EFF3;
     bottom:0;
     left:1200px;
     z-index: 12;
+  }
+
+.bottom {
+    border-width:5px 100vw ;
+    border-style:solid;
+    border-color:white; 
+
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index: 13;
   }
 
 .station-up {
@@ -123,27 +136,27 @@ $cloud-color:#E4EFF3;
 /* Small phone screen sizes */
 @media only screen and (max-device-width: 411px) {
     .drawing{
-        transform: scale(0.2) translateX(-1000px) translateY(1500px);
+        transform: scale(0.2) translateX(-1000px) translateY(1410px);
     }
 }
 
 /* Large phone screen sizes */
 @media only screen and (max-device-width: 480px) and (min-device-width: 412px) {
     .drawing{
-        transform: scale(0.2) translateX(-1000px) translateY(1500px);
+        transform: scale(0.2) translateX(-1000px) translateY(1410px);
     }
 }
 
 /* Small tablet screen sizes */
 @media only screen and (max-device-width: 768px) and (min-device-width: 481px) {
     .drawing{
-        transform: scale(0.2) translateX(-1000px) translateY(1500px);
+        transform: scale(0.2) translateX(-1000px) translateY(1410px);
     }
 }
 
 /* Large tablet screen sizes */
 @media only screen and (max-device-width: 1280px) and (min-device-width: 769px) {
     .drawing{
-        transform: scale(0.2) translateX(-1000px) translateY(1500px);
+        transform: scale(0.2) translateX(-1000px) translateY(1410px);
     }
 }

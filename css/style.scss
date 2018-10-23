@@ -1,8 +1,12 @@
 ---
 ---
 
+/* Font*/ 
+$font-stack:    Biko, sans-serif, "Times New Roman";
+$text-color:    #ffffff;
+
 * {
-	margin: 0;
+    margin: 0;
 }
 
 @font-face {
@@ -11,53 +15,52 @@
 }
 
 html {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin bgposition{
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 body {
-	height: 100%;
-	width: 100%;
-    color: white;
-	font-family: Biko, sans-serif, "Times New Roman";
-	
+    height: 100%;
+    width: 100%;
+    color: $text-color;
+    font-family: $font-stack;
+    &:before {
+        @include bgposition;
+        position: fixed;
+        display: block;
+        // background: #22292c; /* For browsers that do not support gradients */
+        background: #063651;
+        /* For browsers that do not support gradients */
+        // background: -webkit-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%);
+        // background: -o-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%);
+        // background: -moz-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%);
+        background: linear-gradient(#22292c 0%, #00121E 100%, ); /* Standard syntax */
+        /* Standard syntax */
+        content: "";
+    }
 }
 
-body:before {
-	position: fixed;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	display: block;
-	// background: #22292c; /* For browsers that do not support gradients */
-	background: #063651; /* For browsers that do not support gradients */
-    // background: -webkit-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%);
-    // background: -o-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%);
-    // background: -moz-linear-gradient(#020913 0%, #00121E 19%, #001F3A 28%, #063651 56%, #2B546B 71%, #827C6C 100%);
-	background: linear-gradient(#22292c 0%, #00121E 100%, ); /* Standard syntax */
-	 /* Standard syntax */
-	content: "";
+canvas {
+    @include bgposition;
+    position: absolute;
 }
 
 h5 {
     margin-top: 1em;
 }
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-	bottom:0;
-	right: 0;
-    z-index: -1;
-}
-
 .logo {
-	max-width: 40%;
-	padding-top: 60px;
-	width: 300px;
+    max-width: 40%;
+    padding-top: 60px;
+    width: 300px;
 }
 
 .email-input {
@@ -65,146 +68,143 @@ canvas {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
+    & input {
+        font-family: $font-stack;
+    }
 }
 
 .past-links {
     margin: 1em;
-    color: white;
+    color: $text-color;
 }
 
 .footer {
-	height: 100px;
-	text-align: center;
-	margin-top: -160px;
-	padding-top: 50px;
-	width: 100%;
-}
-
-.footer a {
-    text-decoration: none;
+    height: 100px;
+    text-align: center;
+    margin-top: -160px;
+    padding-top: 50px;
+    width: 100%;
+    a {
+        text-decoration: none;
+    }
 }
 
 .wrapper {
-	width: 100%;
-	min-height: 100%;
-	text-align: center;
-	margin-bottom: -100px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.wrapper:after {
-	content: "";
-	display: block;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    margin-bottom: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:after {
+        content: "";
+        display: block;
+    }
 }
 
 .footer, .wrapper:after {
-  height: 142px;
+    height: 142px;
 }
 
 .content {
-		max-width: 100%;
-		margin: auto;
+    max-width: 100%;
+    margin: auto;
 }
 
 .fa {
-	color: #ffffff;
-	margin: 0.5em;
-}
-
-.fa:hover {
-	color: #dfdfdf;
+    color: $text-color;
+    margin: 0.5em;
+    &:hover {
+        color: darken($text-color, 20%);
+    }
 }
 
 a:hover {
-	color: #dfdfdf;
+    color: darken($text-color, 20%);
 }
 
 .title {
-	margin-top: 1em;
+    margin-top: 1em;
 }
 
 .btn-primary {
-	color: #fff;
-	border: 0;
-	border-radius: 0;
+    color: $text-color;
+    border: 0;
+    border-radius: 0;
+    &:hover{
+        background-color: #726C5C;
+    }
 }
 
 .input-group {
     display: flex;
 }
 
-.btn-primary:hover {
-	background-color: #726C5C;
-}
-
 .squared {
-	border: 0;
-	border-radius: 0;
+    border: 0;
+    border-radius: 0;
 }
 
 .msg {
-	margin-top: 0.5em;
+    margin-top: 0.5em;
 }
 
-.email-input input {
-	font-family: Biko, sans-serif, "Times New Roman";
-}
+
 
 /* Small phone screen sizes */
 @media only screen and (max-device-width: 411px) {
-	h1 {
-		font-size: 2rem;
-	}
-	h2 {
-		font-size: 1.15rem;
-	}
-	h5 {
-		font-size: 0.85rem;
-	}
-	.email-input {
-		padding: 0 10px 0 10px;
-		max-width: 90%;
-	}
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.15rem;
+    }
+    h5 {
+        font-size: 0.85rem;
+    }
+    .email-input {
+        padding: 0 10px 0 10px;
+        max-width: 90%;
+    }
 }
 
 /* Large phone screen sizes */
 @media only screen and (max-device-width: 480px) and (min-device-width: 412px) {
-	h2 {
-		font-size: 1.5rem;
-	}
-	h5 {
-		font-size: 1rem;
-	}
-	.email-input {
-		padding: 0 10px 0 10px;
-		max-width: 100%;
-	}
+    h2 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    .email-input {
+        padding: 0 10px 0 10px;
+        max-width: 100%;
+    }
 }
 
 /* Small tablet screen sizes */
 @media only screen and (max-device-width: 768px) and (min-device-width: 481px) {
-	.email-input {
-		width: 500px;
-	}
+    .email-input {
+        width: 500px;
+    }
 }
 
 /* Large tablet screen sizes */
 @media only screen and (max-device-width: 1280px) and (min-device-width: 769px) {
-	.logo {
-		width: 80%;
-	}
-	.title {
-		font-size: 4rem;
-	}
-	h2 {
-		font-size: 3rem;
-	}
-	h5 {
-		font-size: 2rem;
-	}
-	.email-input {
-		width: 500px;
-	}
+    .logo {
+        width: 80%;
+    }
+    .title {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h5 {
+        font-size: 2rem;
+    }
+    .email-input {
+        width: 500px;
+    }
 }

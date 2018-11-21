@@ -16,7 +16,7 @@ $(function() {
   var circle = createCircleSprite();
 
   // Constants
-  var numFlakes = 1000;
+  var numFlakes = 300;
 
   // Init flakes
   var flakes = [];
@@ -94,7 +94,7 @@ function createCircleSprite () {
 // Element constructors
 function createFlake () {
   var f = new PIXI.Sprite(circle);
-  var scale = (Math.random() * 1.5)+ 0.5;
+  var scale = (Math.random() * 1.5)+ 0.8;
   f.position.x = Math.random() * renderer.width;
   f.position.y = Math.random() * renderer.height;
   f.alpha = Math.random();

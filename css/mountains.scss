@@ -20,6 +20,16 @@ $cloud-color:#E4EFF3;
   }
 }
 
+.skistation {
+  z-index: 120000;
+  position: absolute;
+  left: 200px;
+  top: 340px;
+  width: 917px;
+  height: 396px;
+
+}
+
 .peak{
     position:absolute;
     right:0;
@@ -69,17 +79,16 @@ $cloud-color:#E4EFF3;
     z-index: 12;
 }
 .chair {
-    border-width:20px 20px;
-    border-style:solid;
-    border-color:black; 
-
+    
     position:absolute;
-    bottom:0;
-    left:1200px;
+    bottom:-5px;
+    left:938px;
     z-index: 12;
+    height: 40px;
+    width: 40px;
 
     animation-name: chair;
-    animation-duration: 8s;
+    animation-duration: 15s;
     animation-delay: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -88,12 +97,12 @@ $cloud-color:#E4EFF3;
 
 @keyframes chair {
     from {
-        bottom:0;
-        left:1200px;
+      bottom:-5px;
+        left:938px;
     }
     to {
-        bottom:200px;
-        left:300px;
+      bottom:253px;
+      left:320px;
     }
 }
 
@@ -132,6 +141,92 @@ $cloud-color:#E4EFF3;
   
 }
 
+
+// .cloud{
+//     animation: move-cloud 20s alternate infinite;
+//     font-size:1.25em;
+//     &-list{
+//       margin:0;
+//       padding:0;
+//       list-style:none;
+//       li{
+       
+//         &:nth-child(1){
+//           top:47%;
+//           left:43%;  
+//           z-index:1;
+//         }
+       
+//         &:nth-child(2){
+//           top:40%;
+//           left:55%;   
+//           font-size:0.75em
+//         }
+//       }
+//     }
+//     position:absolute;  
+//     height:1em;
+//     border-radius:1em;
+//     &-big{
+//       width: 12.25em;
+//         &::before{
+//           content:'';
+//           position:absolute;
+//           bottom:40%;
+//           right:20%;
+//           height:1.25em;
+//           width:1.25em;
+//           border-radius:50%;
+//           background-color: inherit;
+//         }
+//     }
+//     &-small{
+//       width:5em;
+//       &::before{
+//           content:'';
+//           position:absolute;
+//           bottom:0;
+//           left:15%;
+//           height:2.25em;
+//           width:2.25em;
+//           border-radius:50%;
+//           background-color: inherit;
+//         }
+//     }
+//     &-dark{
+//       &.cloud-big{
+//         color:#BFD5E0;
+//         &::before{
+//           box-shadow:-1.5em -0.2em 0 0.5em currentColor,
+//             -6em -0.5em 0 0.75em currentColor,
+//             -8.75em -1.15em 0 1.5em currentColor;        
+//         }
+//       }
+//       background-color:#BFD5E0;
+//     }
+// }
+
+// //animate
+// @-webkit-keyframes move-cloud{
+// 	0%{
+//     -webkit-transform:translateX(0);
+//     transform:translateX(0)
+//   }
+// 	100%{
+//     -webkit-transform:translateX(-200%);
+//     transform:translateX(-200%)
+//   }
+// }
+// @keyframes move-cloud{
+// 	0%{
+//     -webkit-transform:translateX(0);
+//     transform:translateX(0)
+//   }
+// 	100%{
+//     -webkit-transform:translateX(-200%);
+//     transform:translateX(-200%)
+//   }
+// }
 
 /* Small phone screen sizes */
 @media only screen and (max-device-width: 411px) {

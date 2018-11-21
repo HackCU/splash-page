@@ -23,9 +23,9 @@ $cloud-color:#E4EFF3;
 .skistation {
   z-index: 12;
   position: absolute;
-  left: 500px;
+  left: 200px;
   top: 300px;
-  width: 917px;
+  width: 1217px;
   height: 396px;
 
 }
@@ -86,13 +86,17 @@ $cloud-color:#E4EFF3;
 }
 
 @keyframes chair {
-    from {
+    0% {
       bottom:14px;
         left:1228px;
     }
-    to {
+    60% {
       bottom:283px;
       left:610px;
+    }
+    100% {
+      bottom:283px;
+      left:210px;
     }
 }
 
@@ -108,7 +112,7 @@ $cloud-color:#E4EFF3;
 .mountain{
   position:absolute;
   bottom:0px;
-  z-index: 10;
+  z-index: 15;
   left:-90px;
   border-width:26em 20em;
   border-style:solid;
